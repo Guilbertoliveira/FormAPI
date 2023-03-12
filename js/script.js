@@ -6,9 +6,12 @@ var consultaCEP = fetch('https://viacep.com.br/ws/01001250/json/') //fetch é a 
     } else {
     console.log(r)}
     }) // pegando conversão e demonstrando na tela
-.catch(erro => console.log(erro)); //criando erro para demonstrar na tela, (erro padrao), erro 400 bad request
+.catch(erro => console.log(erro))  //criando erro para demonstrar na tela, (erro padrao), erro 400 bad request
+.finally(console.log('Processamento concluido')); //independente da resposta a mensagem será exibida
 
 
 
 console.log(consultaCEP)
+
+
 
