@@ -1,17 +1,19 @@
-var consultaCEP = fetch('https://viacep.com.br/ws/01001250/json/') //fetch é a requisição
-.then( resposta => resposta.json()) //realizando a conversão da promessa para json
-.then(r=> {
-    if(r.erro){ //tratando erro que não cai no 400, numero de cep coerente, porém invalido
-       throw Error('Esse cep não existe');
-    } else {
-    console.log(r)}
-    }) // pegando conversão e demonstrando na tela
-.catch(erro => console.log(erro))  //criando erro para demonstrar na tela, (erro padrao), erro 400 bad request
-.finally(console.log('Processamento concluido')); //independente da resposta a mensagem será exibida
+async function buscaEndereco(cep){ //async codigos assincrono, definindo 
+    try{ //tente requisitar
+        var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`) //fetch é a requisição, só pode usar await se tiver async definido
+        var consultaCEPConvertida = await consultaCEP.json() //espera (await) a conversão (json) ser retornada
+        if (consultaCEPConvertida.erro){ //erro tratado conforme documentação da API
+            throw Error('CEP não existente');
+        }
+         console.log(consultaCEPConvertida);
+         console.log(consultaCEPConvertida.bairro)
+         return consultaCEPConvertida;
+    }
+    catch(erro) { //erro padrao da API sem tratamento, se nao conseguiu requisitar
+            console.log(erro)
+        }
+}
 
-
-
-console.log(consultaCEP)
 
 
 
