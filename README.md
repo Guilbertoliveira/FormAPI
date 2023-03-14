@@ -1,4 +1,7 @@
-<h1 align="center">FormAPI </h1><div align="center">
+<div align="center">
+<img src="https://github.com/Guilbertoliveira/FormAPI/blob/main/img/form.png" width="50px">
+<h1 >FormAPI </h1></div>
+<div align="center">
 <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Guilbertoliveira/FormAPI" />
 <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Guilbertoliveira/FormAPI" />
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Guilbertoliveira/FormAPI" />
