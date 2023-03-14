@@ -75,3 +75,16 @@
     line-height: 18px;
     color: var(--vermelho);
 }
+
+.erro__cep{
+    background-color: var(--laranja);
+    color: white;
+    border-radius: 5px;
+    margin: 2px auto;
+    text-align: center;
+    width: 200px;
+    padding-top: 5px;
+    height: 20px;
+    transition: 1ms;
+
+}
