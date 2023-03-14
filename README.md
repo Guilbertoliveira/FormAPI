@@ -1,4 +1,8 @@
-<h1 align="center">FormAPI </h1>
+<h1 align="center">FormAPI </h1><div align="center">
+<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Guilbertoliveira/FormAPI" />
+<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Guilbertoliveira/FormAPI" />
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Guilbertoliveira/FormAPI" />
+<img alt="Github License" src="https://img.shields.io/github/license/Guilbertoliveira/FormAPI" /></div>
 
 <h2>:hammer:Project Status:hammer:</h2>
 <p>The API functionality is finalized, but there are improvements to be made.</p>
