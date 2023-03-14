@@ -88,3 +88,40 @@
     transition: 1ms;
 
 }
+
+@media screen and (max-width: 480px) {
+    .principal {
+        margin: 20px 0px;
+        width: 92vw;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .principal__formulario{
+        margin-left: 25px;
+    }
+
+    .principal__subtitulo {
+        margin: 20px 0px;
+        color: var(--laranja);
+        font-size: 22px;
+    }
+
+   
+    .formulario__botao {
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        padding: 0px;
+        margin-right: 20vw;
+    }
+
+    .formulario__dupla{
+        width: 90vw;
+    }
+
+    footer, hr{
+        display: none;
+    }
+   
+}
